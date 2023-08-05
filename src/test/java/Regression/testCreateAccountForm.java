@@ -20,8 +20,7 @@ public class testCreateAccountForm extends Globals {
         createAccountPage.lastName.sendKeys(getWorkbook(1,2));
         createAccountPage.email.sendKeys(getWorkbook(1,3));
         createAccountPage.password.sendKeys(getWorkbook(1,4));
-        System.out.println(getWorkbook(1,4));
-        createAccountPage.confirmPassword.sendKeys(getWorkbook(1,5));
+          createAccountPage.confirmPassword.sendKeys(getWorkbook(1,5));
         clickElement(createAccountPage.submitBtn);
     }
 }
