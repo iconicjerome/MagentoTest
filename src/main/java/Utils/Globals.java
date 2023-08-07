@@ -26,11 +26,12 @@ public class Globals {
     }
     @AfterSuite
     public void tearDown() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         driver.quit();
     }
     //use the below function to make sure it accepts type WebElements
     public void clickElement(WebElement element) {
+
         element.click();
     }
 

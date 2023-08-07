@@ -24,4 +24,8 @@ public class CreateAccountPage {
     public WebElement confirmPassword;
     @FindBy(xpath = "//*[@id=\"form-validate\"]/div/div[1]/button")
     public WebElement submitBtn;
+    @FindBy(xpath = "//*[@id=\"maincontent\"]/div[1]/div[2]/div/div/div")
+    public WebElement thankYouMsg;
+    @FindBy(xpath = "//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")
+    public WebElement accountPresentError;
 }
