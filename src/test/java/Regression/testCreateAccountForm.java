@@ -35,8 +35,6 @@ public class testCreateAccountForm extends Globals {
         softAssert.assertTrue(createAccountPage.thankYouMsg.equals(createAccountPage.thankYouMsg));
         createAccountPage.signOutDropdown.click();
         createAccountPage.signOutBtn.click();
-//        clickElement(magentoHomePage.createAccount);
-
     }
     @Test(priority = 1)
     public void duplicateDetails() throws IOException {
