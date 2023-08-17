@@ -6,4 +6,9 @@
     <class name="Regression.testCreateAccountForm"></class>
 </classes>
 </test>
+    <test name ="test account login">
+        <classes>
+            <class name="Regression.testLogInForm"></class>
+        </classes>
+    </test>
 </suite>

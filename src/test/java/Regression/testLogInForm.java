@@ -34,5 +34,4 @@ public class testLogInForm extends Globals {
             System.out.println("Check your code oo!");
         }
     }
-
 }
