@@ -10,9 +10,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import java.io.IOException;
+import PageObjects.CreateAccountPage;
 
 public class Globals {
     public static WebDriver driver;
+    CreateAccountPage createAccountPage;
     //create method to start the browser
     @BeforeSuite
     public static WebDriver startBrowser(){
@@ -42,6 +44,15 @@ public class Globals {
         XSSFSheet sheet = workbook.getSheet("Sheet1");
         String getData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
         return getData;
+    }
+    //create method to clear input fields in the textfields
+    public void clearFields(){
+        createAccountPage = new CreateAccountPage(driver);
+        createAccountPage.confirmPassword.clear();
+        createAccountPage.email.clear();
+        createAccountPage.password.clear();
+        createAccountPage.lastName.clear();
+        createAccountPage.firstName.clear();
     }
 
 }

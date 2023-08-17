@@ -28,4 +28,8 @@ public class CreateAccountPage {
     public WebElement thankYouMsg;
     @FindBy(xpath = "//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")
     public WebElement accountPresentError;
+    @FindBy(xpath = "/html/body/div[2]/header/div[1]/div/ul/li[2]/span/button")
+    public WebElement signOutDropdown;
+    @FindBy(xpath="/html/body/div[2]/header/div[1]/div/ul/li[2]/div/ul/li[3]/a")
+    public WebElement signOutBtn;
 }
