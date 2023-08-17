@@ -19,4 +19,6 @@ public class LogInPage {
     public WebElement submitLogInBtn;
     @FindBy(xpath = "/html/body/div[2]/header/div[1]/div/ul/li[2]/a")
     public WebElement signInBtn;
+    @FindBy(xpath = "//*[@id=\"pass-error\"]")
+    public WebElement requiredFieldMessage;
 }

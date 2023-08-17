@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d589f827-7acb-4926-9a6c-c42a9f34be1d" name="Changes" comment="Add invalid testcase">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LogInPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Regression/testLogInForm.java" afterDir="false" />
+    <list default="true" id="d589f827-7acb-4926-9a6c-c42a9f34be1d" name="Changes" comment="Add Login testcase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Regression/testCreateAccountForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression/testCreateAccountForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Regression/testLogInForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression/testLogInForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +99,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testLogInForm.validLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Regression" />
+      <option name="MAIN_CLASS_NAME" value="Regression.testLogInForm" />
+      <option name="METHOD_NAME" value="validLogIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.testLogInForm" />
+        <item itemvalue="TestNG.testLogInForm.validLogIn" />
         <item itemvalue="TestNG.C:/Users/USER/IdeaProjects/MagentoForms/testng.xml" />
         <item itemvalue="TestNG.testCreateAccountForm.duplicateDetails" />
       </list>
@@ -152,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692307597842</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Login testcase">
+      <created>1692308999467</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692308999467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +185,7 @@
     <MESSAGE value="Create account for user" />
     <MESSAGE value="Add wait statement" />
     <MESSAGE value="Add invalid testcase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add invalid testcase" />
+    <MESSAGE value="Add Login testcase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Login testcase" />
   </component>
 </project>
