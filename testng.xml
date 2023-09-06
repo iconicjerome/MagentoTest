@@ -11,4 +11,9 @@
             <class name="Regression.testLogInForm"></class>
         </classes>
     </test>
+    <test name ="test account purchase">
+        <classes>
+            <class name="Regression.testPurchase"></class>
+        </classes>
+    </test>
 </suite>

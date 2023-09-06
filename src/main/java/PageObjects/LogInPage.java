@@ -21,4 +21,6 @@ public class LogInPage {
     public WebElement signInBtn;
     @FindBy(xpath = "//*[@id=\"pass-error\"]")
     public WebElement requiredFieldMessage;
+    @FindBy(xpath = "/html/body/div[2]/header/div[2]/a/img")
+    public WebElement lumaImg;
 }

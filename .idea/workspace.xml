@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d589f827-7acb-4926-9a6c-c42a9f34be1d" name="Changes" comment="Add Login testcase">
+    <list default="true" id="d589f827-7acb-4926-9a6c-c42a9f34be1d" name="Changes" comment="Add Login testcase to testsuite">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Regression/testPurchase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Regression/testCreateAccountForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression/testCreateAccountForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Regression/testLogInForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression/testLogInForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -63,25 +69,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCreateAccountForm.duplicateDetails" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NewTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="Regression" />
-      <option name="MAIN_CLASS_NAME" value="Regression.testCreateAccountForm" />
-      <option name="METHOD_NAME" value="duplicateDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testLogInForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NewTest" />
       <extension name="coverage">
@@ -117,12 +104,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Regression" />
+      <option name="MAIN_CLASS_NAME" value="Regression.testPurchase" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testPurchase.validPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Regression" />
+      <option name="MAIN_CLASS_NAME" value="Regression.testPurchase" />
+      <option name="METHOD_NAME" value="validPurchase" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/USER/IdeaProjects/MagentoForms/testng.xml" />
+        <item itemvalue="TestNG.testPurchase.validPurchase" />
+        <item itemvalue="TestNG.testPurchase" />
         <item itemvalue="TestNG.testLogInForm" />
         <item itemvalue="TestNG.testLogInForm.validLogIn" />
-        <item itemvalue="TestNG.testCreateAccountForm.duplicateDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692310311885</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Login testcase to testsuite">
+      <created>1692310632600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692310632600</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,6 +223,23 @@
     <MESSAGE value="Add wait statement" />
     <MESSAGE value="Add invalid testcase" />
     <MESSAGE value="Add Login testcase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Login testcase" />
+    <MESSAGE value="Add Login testcase to testsuite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Login testcase to testsuite" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Regression/testPurchase.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Regression/testPurchase.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -38,10 +38,17 @@ public class Globals {
     }
 
     //create method to access testdata
-    public static String getWorkbook(int rowNum, int colNum) throws IOException {
+    public static String getWorkbook1(int rowNum, int colNum) throws IOException {
         String projectPath =System.getProperty("user.dir");
         XSSFWorkbook workbook = new XSSFWorkbook(projectPath+"/Resources/testdata.xlsx");
         XSSFSheet sheet = workbook.getSheet("Sheet1");
+        String getData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
+        return getData;
+    }
+    public static String getWorkbook2(int rowNum, int colNum) throws IOException {
+        String projectPath =System.getProperty("user.dir");
+        XSSFWorkbook workbook = new XSSFWorkbook(projectPath+"/Resources/testdata.xlsx");
+        XSSFSheet sheet = workbook.getSheet("Sheet2");
         String getData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
         return getData;
     }

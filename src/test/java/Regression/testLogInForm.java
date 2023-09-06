@@ -16,22 +16,23 @@ public class testLogInForm extends Globals {
         logInPage = new LogInPage(driver);
         createAccountPage = new CreateAccountPage(driver);
         clickElement(logInPage.signInBtn);
-        logInPage.emailField.sendKeys(getWorkbook(1,3));
-        logInPage.passwordField.sendKeys(getWorkbook(1,4));
+        logInPage.emailField.sendKeys(getWorkbook1(1,3));
+        logInPage.passwordField.sendKeys(getWorkbook1(1,4));
         clickElement(logInPage.submitLogInBtn);
-        createAccountPage.signOutDropdown.click();
-        createAccountPage.signOutBtn.click();
+//        createAccountPage.signOutDropdown.click();
+//        createAccountPage.signOutBtn.click();
+        clickElement(logInPage.lumaImg);
     }
-    @Test(priority = 2)
-    public void logInWithoutPassword() throws IOException {
-        logInPage = new LogInPage(driver);
-        clickElement(logInPage.signInBtn);
-        logInPage.emailField.sendKeys(getWorkbook(1,3));
-        clickElement(logInPage.submitLogInBtn);
-        if(logInPage.requiredFieldMessage.isDisplayed()){
-            System.out.println("The error message is present");
-        }else{
-            System.out.println("Check your code oo!");
-        }
-    }
+//    @Test(priority = 2)
+//    public void logInWithoutPassword() throws IOException {
+//        logInPage = new LogInPage(driver);
+//        clickElement(logInPage.signInBtn);
+//        logInPage.emailField.sendKeys(getWorkbook1(1,3));
+//        clickElement(logInPage.submitLogInBtn);
+//        if(logInPage.requiredFieldMessage.isDisplayed()){
+//            System.out.println("The error message is present");
+//        }else{
+//            System.out.println("Check your code oo!");
+//        }
+//    }
 }

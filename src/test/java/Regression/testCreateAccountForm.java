@@ -3,7 +3,6 @@ package Regression;
 import PageObjects.CreateAccountPage;
 import PageObjects.MagentoHomePage;
 import Utils.Globals;
-import org.apache.commons.lang3.builder.ToStringExclude;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -23,11 +22,11 @@ public class testCreateAccountForm extends Globals {
         createAccountPage = new CreateAccountPage(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         clickElement(magentoHomePage.createAccount);
-        createAccountPage.firstName.sendKeys(getWorkbook(1,1));
-        createAccountPage.lastName.sendKeys(getWorkbook(1,2));
-        createAccountPage.email.sendKeys(getWorkbook(1,3));
-        createAccountPage.password.sendKeys(getWorkbook(1,4));
-        createAccountPage.confirmPassword.sendKeys(getWorkbook(1,5));
+        createAccountPage.firstName.sendKeys(getWorkbook1(1,1));
+        createAccountPage.lastName.sendKeys(getWorkbook1(1,2));
+        createAccountPage.email.sendKeys(getWorkbook1(1,3));
+        createAccountPage.password.sendKeys(getWorkbook1(1,4));
+        createAccountPage.confirmPassword.sendKeys(getWorkbook1(1,5));
         clickElement(createAccountPage.submitBtn);
         // use visibilityOf when waiting for elements so that you can use the type WebElement
         wait.until(ExpectedConditions.visibilityOf(createAccountPage.thankYouMsg));
@@ -42,11 +41,11 @@ public class testCreateAccountForm extends Globals {
         createAccountPage = new CreateAccountPage(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         clickElement(magentoHomePage.createAccount);
-        createAccountPage.firstName.sendKeys(getWorkbook(2,1));
-        createAccountPage.lastName.sendKeys(getWorkbook(2,2));
-        createAccountPage.email.sendKeys(getWorkbook(2,3));
-        createAccountPage.password.sendKeys(getWorkbook(2,4));
-        createAccountPage.confirmPassword.sendKeys(getWorkbook(2,5));
+        createAccountPage.firstName.sendKeys(getWorkbook1(2,1));
+        createAccountPage.lastName.sendKeys(getWorkbook1(2,2));
+        createAccountPage.email.sendKeys(getWorkbook1(2,3));
+        createAccountPage.password.sendKeys(getWorkbook1(2,4));
+        createAccountPage.confirmPassword.sendKeys(getWorkbook1(2,5));
         clickElement(createAccountPage.submitBtn);
         // use visibilityOf when waiting for elements so that you can use the type WebElement
         wait.until(ExpectedConditions.visibilityOf(createAccountPage.accountPresentError));
